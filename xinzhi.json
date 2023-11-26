@@ -1,0 +1,16 @@
+var obj = JSON.parse($response.body);
+obj= 
+{
+  "status": "ok",
+  "msg": "请求成功",
+  "timestamp": 1701006855,
+  "data": {
+    "vip_expire": 1801058492,
+    "client_type": 2,
+    "version": 410,
+    "is_vip": 1,
+    "vip_type": "yearly",
+    "vip_day": 365
+  }
+}
+$done({body: JSON.stringify(obj)});
